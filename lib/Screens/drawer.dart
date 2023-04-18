@@ -65,19 +65,16 @@ class MyDrawer extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.all(2.0.h),
                   child: Text(
-                    'Settings and privacy',
+                    'Settings and Privacy',
                     style: TextStyle(
                       fontSize: 2.5.h,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
-                // ListTile(
-                //   leading: Icon(Icons.person, size: 4.0.h),
-                //   title: Text('Profile', style: TextStyle(fontSize: 2.h)),
-                // ),
+
                 ListTile(
-                  leading: Icon(Icons.home, size: 4.0.h),
+                  leading: Icon(Icons.person, size: 4.0.h),
                   title: Text('Profile', style: TextStyle(fontSize: 2.h)),
                   onTap: () {
                     Navigator.push(

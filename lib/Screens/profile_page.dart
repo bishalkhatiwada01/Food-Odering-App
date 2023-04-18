@@ -101,7 +101,7 @@ class Account extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'Sobhakar Poudel',
+                      'Bishal Khatiwada',
                       style: TextStyle(
                           fontSize: 16.sp, fontWeight: FontWeight.w500),
                     ),
