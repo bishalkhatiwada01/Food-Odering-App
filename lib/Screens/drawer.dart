@@ -18,9 +18,19 @@ class MyDrawer extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ListTile(
-                  leading: CircleAvatar(
-                    radius: 4.h,
+                  leading: Container(
+                    width: 8.w,
+                    height: 5.h,
+                    decoration: const BoxDecoration(shape: BoxShape.circle),
+                    child: Image.asset(
+                      "assets/bishal.jpeg",
+                      fit: BoxFit.fill,
+                    ),
                   ),
+
+                  // leading: CircleAvatar(
+                  //   radius: 4.h,
+                  // ),
                   title: Text(
                     'Bishal Khatiwada',
                     style: TextStyle(
@@ -36,7 +46,6 @@ class MyDrawer extends StatelessWidget {
                 Divider(
                   color: Colors.grey[400],
                 ),
-
                 ListTile(
                   leading: Icon(Icons.home, size: 4.0.h),
                   title: Text('Home', style: TextStyle(fontSize: 2.h)),
@@ -72,7 +81,6 @@ class MyDrawer extends StatelessWidget {
                     ),
                   ),
                 ),
-
                 ListTile(
                   leading: Icon(Icons.person, size: 4.0.h),
                   title: Text('Profile', style: TextStyle(fontSize: 2.h)),
@@ -83,7 +91,6 @@ class MyDrawer extends StatelessWidget {
                     );
                   },
                 ),
-
                 ListTile(
                   leading: Icon(Icons.bookmark, size: 4.0.h),
                   title: Text('Bookmarks', style: TextStyle(fontSize: 2.h)),
