@@ -16,6 +16,8 @@ class _ShoppingCartState extends State<ShoppingCart> {
       appBar: AppBar(
         title: Text("Cart"),
       ),
+      body: ElevatedButton(
+          onPressed: () {}, child: Text("this is shopping cart page")),
     );
   }
 }
