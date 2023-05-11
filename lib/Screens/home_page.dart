@@ -19,21 +19,6 @@ class _HomePageState extends State<HomePage> {
   final Color mainColor = const Color(0xffD40909);
   final searchController = TextEditingController();
 
-  int _selectedIndex = 0;
-
-  final List<Widget> _widgetOptions = <Widget>[
-    const Text('Home'),
-    const Text('Favorites'),
-    const Text('Account'),
-    const Text('Settings'),
-  ];
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -164,30 +149,6 @@ class _HomePageState extends State<HomePage> {
             BurgerCard(),
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        fixedColor: Colors.red,
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorites',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
-            label: 'Account',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-          ),
-        ],
       ),
     );
   }

@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 import 'package:sizer/sizer.dart';
 
-class Account extends StatelessWidget {
+class AccountPage extends StatelessWidget {
   final searchController = TextEditingController();
   final Color mainColor = Color(0xffD40909);
 
