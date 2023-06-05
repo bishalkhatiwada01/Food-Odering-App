@@ -1,9 +1,9 @@
 import 'package:bytencoder/Screens/home_page.dart';
 import 'package:bytencoder/Screens/profile_page.dart';
 import 'package:flutter/material.dart';
-
 import '../Screens/favorite_page.dart';
 import '../Screens/setting_page.dart';
+
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
 
@@ -17,33 +17,33 @@ class _BottomNavBarState extends State<BottomNavBar> {
     HomePage(),
     FavoritePage(),
     AccountPage(),
-    SettingPage(),
+    ProfilePage(),
   ];
 
-  void _onTapped(int index){
+  void _onTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar: AppBar(
-        title: Text("Bottom Navigation Bar"),
-      ),
+    return Scaffold(
+      body: Center(child: pages[_selectedIndex]),
       bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-      currentIndex: _selectedIndex,
-      onTap: _onTapped,
-      items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite),label: "Favorites"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_circle),label: "Account"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings),label: "Settings"),
-
+        type: BottomNavigationBarType.fixed,
+        currentIndex: _selectedIndex,
+        onTap: _onTapped,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite), label: "Favorites"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle), label: "Profile"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.settings), label: "Settings"),
         ],
       ),
     );
   }
 }
-

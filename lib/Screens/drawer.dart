@@ -50,7 +50,7 @@ class MyDrawer extends StatelessWidget {
                   leading: Icon(Icons.home, size: 4.0.h),
                   title: Text('Home', style: TextStyle(fontSize: 2.h)),
                   onTap: () {
-                    Navigator.push(
+                    Navigator.pop(
                       context,
                       MaterialPageRoute(builder: (context) => const HomePage()),
                     );

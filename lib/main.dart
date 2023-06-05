@@ -1,13 +1,8 @@
 import 'package:bytencoder/Screens/home_page.dart';
-import 'package:bytencoder/Screens/login_page.dart';
-
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import 'Screens/drawer.dart';
-import 'Screens/profile_page.dart';
 import 'Screens/splash_screen.dart';
-import 'Widgets/custom_nav.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +17,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'ByteEncoder',
           theme: ThemeData.light(),
-          home: BottomNavBar(),
+          home: SplashScreen(),
         );
       },
     );

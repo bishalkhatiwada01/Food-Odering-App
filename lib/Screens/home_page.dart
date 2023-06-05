@@ -1,5 +1,6 @@
 import 'package:bytencoder/Screens/cart_page.dart';
 import 'package:bytencoder/Screens/drawer.dart';
+import 'package:bytencoder/Widgets/custom_nav.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -150,6 +151,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }

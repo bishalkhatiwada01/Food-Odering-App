@@ -1,12 +1,11 @@
 import 'package:bytencoder/Screens/home_page.dart';
 import 'package:bytencoder/Screens/login_page.dart';
+import 'package:bytencoder/Widgets/custom_nav.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:sizer/sizer.dart';
-
-import '../main.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
